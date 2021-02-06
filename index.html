@@ -9,13 +9,60 @@
 </head>
 <body>
     <nav>
-
+        <ul>
+            <li><a href="index.html" id="thisPage">Fråga 1</a></li>
+            <li><a href="fragor/fraga2.html" id="pagefraga2">Fråga 2</a></li>
+            <li><a href="fragor/fraga3.html" id="thisPage">Fråga 3</a></li>
+        </ul>
     </nav>
     <header>
-        <h1>Rubrik 1</h1>
+        <h1>Lösning Fråga 1 </h1>
     </header>
     <main>
-        <p>Lite text</p>
+        <h2>A. Datakommunikation och webbadresser </h2>
+        <ol>
+            <li>Ge en kort beskrivning (syfte och vad de gör) av var och en av protokollen HTTP, TCP och IP.</li>
+            <ul>
+                <li><p>
+                    HTTP är en kommunikationsprotokoll som tillhör vad man kallar applikationslagret. Dvs det är en form av reglerad språk mellan två specifika typer applikationer som kommunicerar med varanda över ett nätverk. Dessa två applikationer är webläsaren och webservern. Webbläsaren använder detta språk för att begära och få webbsidor/htlml dokument från en webserver. HTTP använder sig av TCP för att skapa 
+                    en förbindelse mellan klienten och servern.  
+                    </p>
+                </li>
+                <li>
+                    <p>
+                    TCP är också ett kommunikationsprotokoll och tillhör vad som kallas transportlagret. Dvs nu handlar det inte om en kommunikation mellan applikationer, utan kommunikation mellan två värdar/enheter över ett nätverk. Det är förbindelseorienterat dataöverföringsprotokoll, dvs en förbindelse skapas mellan två värdar på ett nätverk som sedan används för att överföra data. TCP vet inte vad det är för typ av data som ska överföras, t.ex om det är en webbsida eller epost. TCP hos sändaren delar upp meddelandet i mindre paket och numrerar dem. Sedan används protokollet IP i det undre lagret för själva överföring. TCP hos mottagaren får dessa paket och sättar samman dem och skickar dem vidare till programmet som dem var avsedda för. 
+                    </p>
+              
+                </li>
+                <li>
+                    <p>
+                    IP är ett kommunikationsprotokoll som tillhör nätverkslagret med ansvar 
+                    för transportera/överföra små s.k nätverkspaket mellan två värdar över ett nätverk. Sändaren addresserar med IP-adress och paketen skickas över nätverket med hjälp av routrar. IP vet inget om någon relation mellan paketen men om ett viss pakets leverans inte bekräftas så återsänds det paketet. Mottagaren tar emot dessa paket och skickar en bekräftelse till sändaren. Sedan skickas paketen vidare dem tiLl TCP som sätter samman paketen till dem olika meddelandena som de tillhör.</p> 
+                </li>
+            </ul>
+            
+            <li>Beskriv vilka delar följande url består av:<br/>
+                http://medieteknik.lnu.se/1me321/uppg/u1.html#fragor</li>
+            <ul>
+                <li>
+                    <p> http:// = Protokoll/Tjänst </p>
+                </li>
+                <li>
+                    <p>medieteknik.lnu.se = Domännamn/Adress till servern </p>
+                </li>
+                <li>
+                    <p>1me321/uppg/ = Address/mappar inom servern</p>
+                </li>
+                <li>
+                    <p>u1.html = Fil/resurs på servern</p>
+                </li>
+                <li>
+                    <p>#fragor= Stycke i filen "u1.html" på servern</p> 
+                </li>
+            </ul>
+        </ol> 
+          
+        
     </main>
     <footer>
 
