@@ -10,9 +10,9 @@
 <body>
     <nav>
         <ul>
-            <li><a href="../index.html" id="thisPage">Fråga 1</a></li>
-            <li><a href="fraga2.html" id="pagefraga2">Fråga 2</a></li>
-            <li><a href="fraga3.html" id="pagefraga3">Fråga 3</a></li>
+            <li><a href="../index.html">Fråga 1</a></li>
+            <li><a href="fraga2.html">Fråga 2</a></li>
+            <li><a href="fraga3.html" class="thisPage">Fråga 3</a></li>
         </ul>
     </nav>
     <header>
@@ -21,8 +21,25 @@
     <main>
         <h2>C. CSS </h2> 
         <ol>
-            <li>Vad är en regel i CSS och vad består den av?</li>
-            <li>Vad menas med kaskad i CSS?</li>
+            <li>Vad är en regel i CSS och vad består den av?
+                <ul>
+                    <li>
+                        <p>
+                            En css fil består av an lista av regler. En regel består två delar. Först kommer en selektor som väljer ut vilka element som regeln gäller för. Sedan följer ett deklarationsblock där man listar vilka egenskaper som ska förändras samt vilka värden de ska sättas till. T.ex regeln: p {color: black; } anger att paragraf element ska ha svart färg.
+                        </p>
+                        <img class="litenBild" src="../img/css_regel.png" alt="Struktur på en css regel">
+                    </li>
+                </ul>
+            </li>
+            <li>Vad menas med kaskad i CSS?
+                <ul>
+                    <li>
+                        <p>
+                            Stilinställningarna kan delvis placeras på olika ställen, t.ex i en extern css fil eller i attributet "style" i en html tagg, komma ifrån olika CSS-dokument eller från olika CSS-regler som kommer efter varandra i sammma CSS-dokument. CSS-specifikationen har en form prioriteringssystem baserad på vissa beräkningar för att avgöra vilken stilregel som ska gälla om det är så att mer än en regel matchar mot ett visst element. Därmed uppnås ett förutsägbart resultat. Processen som systematisk går igenom alla regler och väljer ut vad som ska gälla är vad som kallas kaskaden. 
+                        </p>
+                    </li>
+                </ul>
+            </li>
           
         </ol> 
     </main>

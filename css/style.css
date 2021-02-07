@@ -15,10 +15,12 @@ body {
     padding: 0 8px;
     background-color: #eeeadd;
     color: #000000;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Arial, Helvetica, sans-serif
 }
 
 nav ul {
+    margin: 1rem;
+    padding: 0;
     text-align: right;
     list-style: none;
 }
@@ -27,55 +29,60 @@ nav li {
     display: inline;
 }
 
-nav a:link,
-nav a:visited {
-    text-decoration: none;
+nav a:link, nav a:visited {
+    text-decoration:none;
     padding: 0.5rem;
-    background-color: #802808;
+    background-color: #238380;
     color: #ebe6dc;
 }
 
-nav a:hover,
-nav a:active {
-    background-color: #b1461f;
+nav a:hover, nav a:active {
+    background-color: lightseagreen;
     color: #dfb666;
 }
 
-/*
-#thisPage {
-    background-color: #9d7010;
+nav a.thisPage {
+    background-color:#044643; 
     color: #ebe6dc;
 }
-*/
-h1,
-h2,
-h3 {
-    color: #802808;
+
+h1,h2,h3 {
+    color: #050000;
 }
 
 h1 {
-    border-bottom: 4px double #802808;
     font-style: italic;
     font-size: 3rem;
     text-align: center;
+    background-image: url(../img/tile1.png)
+}
+h2 {
+    font-size: 1.5rem;
+}
+ol a {
+    color: rgb(13, 17, 243) !important;
+}
+a:link, a:visited {
+    color: #000000;
+    
 }
 
-a:link,
-a:visited {
-    color: #000000;
-}
+a:hover, a:active {
+    font-style: italic;
 
-a:hover,
-a:active {
-    color: #000000;
-    background-color: #FC6;
 }
 
 img {
     max-width: 100%;
     border-radius: 20px;
 }
-
+.litenBild{
+    width: 300px;
+}
+#typTagg2{
+    margin-left: 40px;
+    width: 250px;
+}
 .floatRight {
     float: right;
     width: 300px;
@@ -86,7 +93,8 @@ img {
 
 footer {
     clear: both;
-    margin-top: 2rem;
+    margin-top: 10px;
     border-top:1px solid #666666;
     font-style: italic;
+    padding: 10px;
 }
